@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="141.0" prefWidth="187.0" style="-fx-border-radius: 15%; -fx-background-radius: 15%; -fx-background-color: #9fc7c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.00000190734863" minWidth="10.0" prefWidth="131.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="116.66666603088379" minHeight="10.0" prefHeight="109.66666603088379" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane fx:id="draggedArea" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <Label fx:id="nodeTitle" alignment="CENTER" contentDisplay="CENTER" layoutY="13.0" prefHeight="18.0" prefWidth="132.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <VBox fx:id="inputLayout" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="2" />
+      <VBox fx:id="outputLayout" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: rgba(1, 1, 1, 0);" text="❌" textAlignment="CENTER" textFill="#8d0000" GridPane.columnIndex="2" />
+      <Line endX="86.5" startX="-100.0" GridPane.rowIndex="1" />
+      <TextField fx:id="editField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <effect>
+      <DropShadow />
+   </effect>
+</GridPane>

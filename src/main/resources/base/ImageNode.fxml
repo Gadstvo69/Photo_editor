@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="grid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-border-radius: 5%; -fx-background-radius: 5%; -fx-background-color: #9fc7c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="134.00000190734863" minWidth="10.0" prefWidth="131.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="116.66666603088379" minHeight="10.0" prefHeight="109.66666603088379" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane fx:id="draggedArea" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <Label fx:id="nodeTitle" alignment="CENTER" contentDisplay="CENTER" layoutY="13.0" prefHeight="18.0" prefWidth="132.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="inputLayout" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="2" />
+      <VBox fx:id="outputLayout" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: rgba(1, 1, 1, 0);" text="❌" textAlignment="CENTER" textFill="#8d0000" GridPane.columnIndex="2" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../../../../../../../../../Desktop/bottle.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <effect>
+      <DropShadow />
+   </effect>
+</GridPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gadstvo69.photo_editor.MainViewController">
+   <center>
+      <SplitPane dividerPositions="0.5">
+         <items>
+            <ScrollPane fx:id="sceneScroll" prefHeight="720.0" prefWidth="1000.0">
+               <content>
+                  <AnchorPane fx:id="sceneContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10000.0" prefWidth="10000.0" style="-fx-background-color: #91a8c9;">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></AnchorPane>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save" />
+               <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="Open" />
+            </items>
+          </Menu>
+           <Menu mnemonicParsing="false" text="Nodes">
+              <items>
+                 <MenuItem fx:id="intNodeButton" mnemonicParsing="false" text="Integer_Node" />
+                 <MenuItem fx:id="f2" mnemonicParsing="false" text="Open" />
+                 <MenuItem fx:id="floatNodeButton" mnemonicParsing="false" text="FloatNode" />
+                 <MenuItem fx:id="stringNodeButton" mnemonicParsing="false" text="StringNode" />
+                 <MenuItem fx:id="sepiaNodeButton" mnemonicParsing="false" text="SepiaNode" />
+                 <MenuItem fx:id="grayNodeButton" mnemonicParsing="false" text="GrayNode" />
+                 <MenuItem fx:id="addTextNodeButton" mnemonicParsing="false" text="AddTextNode" />
+                 <MenuItem fx:id="imageNodeButton" mnemonicParsing="false" text="ImageNode" />
+                 <MenuItem fx:id="addImageNodeButton" mnemonicParsing="false" text="AddImageNode" />
+                 <MenuItem fx:id="brightnessNodeButton" mnemonicParsing="false" text="BrightnessNode" />
+                 <MenuItem fx:id="blurNodeButton" mnemonicParsing="false" text="BlurNode" />
+                 <MenuItem fx:id="invertNodeButton" mnemonicParsing="false" text="InvertNode" />
+                 <MenuItem fx:id="moveNodeButton" mnemonicParsing="false" text="MoveNode" />
+                 <MenuItem fx:id="scaleNodeButton" mnemonicParsing="false" text="ScaleNode" />
+                 <MenuItem fx:id="rotateNodeButton" mnemonicParsing="false" text="RotateNode" />
+              </items>
+           </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
